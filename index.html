@@ -9,6 +9,33 @@
     <body>
         <div class="titleText">i love centering divs!!!</div>
         <h1>website fun and games</h1>
+
+        <!--tabs test-->
+        <div class="pages">
+            <button class="tabs" onclick="cats(event, 'James')">James</button>
+            <button class="tabs" onclick="cats(event, 'Larry')">Larry</button>
+            <button class="tabs" onclick="cats(event, 'Mr Munchkins Man')">Mr Munchkins man</button>
+        </div>
+
+        <!--tab content-->
+        <div id="James" class="tabcontent">
+            <h3>James</h3>
+            <p>james is in ur bathroom lil bro</p>
+            <span onclick="this.parentElement.style.display = 'none'">close tab</span>
+        </div>
+
+        <div id="Larry" class="tabcontent">
+            <h3>Larry</h3>
+            <p>dont let him turn into EVIL LARRY</p>
+            <span onclick="this.parentElement.style.display = 'none'">close tab</span>
+        </div>
+
+        <div id="mrMunchkinsMan" class="tabcontent">
+            <h3>Mr Munchkins Man</h3>
+            <p>mr munchkins man has a scariest story for you</p>
+            <span onclick="this.parentElement.style.display = 'none'">close tab</span>
+        </div>
+
         <img src="car.jpg" alt="car!" width="400" height="500" class="imageCar">
         <p>yippee</p>
 
