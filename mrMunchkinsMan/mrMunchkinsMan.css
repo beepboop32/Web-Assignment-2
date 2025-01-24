@@ -1,21 +1,7 @@
 body {
-    background-color: lightblue;
+    background-color: seagreen;
 }
 
-.titleText {
-    margin: auto;
-    width: 200px;
-    background-color: white;
-    padding: 10px;
-    border: 3px black;
-    text-align: center;
-}
-
-.imageCar {
-    width: 400;
-    height: 500;
-    
-}
 
 
 .pages {
@@ -24,7 +10,6 @@ body {
     background-color: azure;
 
 }
-
 /*styles butons that are used to open the tabs*/
 
 .pages button {
