@@ -2,20 +2,60 @@ body {
     background-color: lightblue;
     background-image: url(james.png);
 }
-
-
-
-.pages {
-    overflow: hidden;
-    border: 1px solid black;
-    background-color: azure;
-
+.titleText {
+    margin: auto;
+    width: auto;
+    background-color: white;
+    padding: 17px;
+    border: 3px black;
+    text-align: center;
+    font-size: 24px; /* Adjust this value to change the font size */
+    font-family: Arial, sans-serif; /* Change this value to change the font type */
 }
 
-/*styles butons that are used to open the tabs*/
 
-.pages button {
-    background-color: inherit;
+
+#jorkingIt {
+    position: absolute;
+}
+
+
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sideNav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sideNav a:hover {
+    color: #f1f1f1;
+}
+
+.sideNav .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.navButton {
+    background-color: white;
+    color: white;
     float: left;
     border: none;
     outline: none;
@@ -24,17 +64,7 @@ body {
     transition: 0.3s;
 }
 
-.pages button:hover {
-    background-color: wheat;
-}
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-
-#jorkingIt {
-    position: absolute;
+.navButton:hover {
+    background-color: lightgray;
+    cursor: pointer; /* Ensures the cursor shows the click icon */
 }

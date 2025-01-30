@@ -7,39 +7,29 @@
         <script src= "script.js"></script>
     </head>
     <body>
-        <div class="titleText">i love centering divs!!!</div>
-        <h1>website fun and games</h1>
+        <div id="sideNav" class ="sideNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="James/james.html">James</a>
+            <a href="Larry/larry.html">Larry</a>
+            <a href="mrMunchkinsMan/mrMunchkinsMan.html">Mr munchkins man</a>
+        </div>
+        <div id="navButton">
+            <button class="navButton"><span onclick="openNav()"><img src="hamburger-menu.svg" width="30" height="30"></span></button>
+            <span onclick="openNav()"></span>
+        </div>
+        <div id="main">
+            
+        </div>
+        <div class="titleText">Car Distribution System</div>
+        
 
         <!--tabs test-->
-        <div class="pages">
-            <button class="tabs" onclick="cats(event, 'James')">James</button>
-            <button class="tabs" onclick="cats(event, 'Larry')">Larry</button>
-            <button class="tabs" onclick="cats(event, 'mrMunchkinsMan')">Mr Munchkins man</button>
-        </div>
+        
 
-        <!--tab content-->
-        <div id="James" class="tabcontent">
-            <h3>James</h3>
-            <p>james is in ur bathroom lil bro</p>
-            <button class="switchpage" onclick="switchPage(0)">James page</button>
-            <span onclick="this.parentElement.style.display = 'none'">close tab</span>
-        </div>
+        
 
-        <div id="Larry" class="tabcontent">
-            <h3>Larry</h3>
-            <p>dont let him turn into EVIL LARRY</p>
-            <button class="switchpage" onclick="switchPage(1)">Larry page</button>
-            <span onclick="this.parentElement.style.display = 'none'">close tab</span>
-        </div>
-
-        <div id="mrMunchkinsMan" class="tabcontent">
-            <h3>Mr Munchkins Man</h3>
-            <p>mr munchkins man has a scariest story for you</p>
-            <button class="switchpage" onclick="switchPage(2)">Mr Munchkins Man page</button>
-            <span onclick="this.parentElement.style.display = 'none'">close tab</span>
-        </div>
-
-        <a href="https://www.youtube.com/watch?v=dgdWgsZy2y0" class="imageCar"><img src="car.jpg" alt="car!" width="400" height="500" id="meow"></a>
+        <a href="https://www.youtube.com/watch?v=dgdWgsZy2y0" class="imageCar"><img src="car.jpg" alt="car!"></a>
         <p>yippee</p>
 
     </body>

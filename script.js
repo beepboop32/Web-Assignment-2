@@ -18,16 +18,24 @@ function cats(event, carName) {
 
 }
 
-function switchPage(num) {
-    switch(num) {
-        case 0:
-            window.location.href = 'James/james.html';
-            break
-        case 1:
-            window.location.href = 'Larry/larry.html';
-            break
-        case 2:
-            window.location.href = 'mrMunchkinsMan/mrMunchkinsMan.html';
-            break
+
+
+function openNav() {
+    document.getElementById("sideNav").style.width = "250px";
+    function switchPage(num) {
+        switch(num) {
+            case 0:
+                window.location.href = 'James/james.html';
+                break
+            case 1:
+                window.location.href = 'Larry/larry.html';
+                break
+            case 2:
+                window.location.href = 'mrMunchkinsMan/mrMunchkinsMan.html';
+                break
+        }
     }
+}
+function closeNav() {
+    document.getElementById("sideNav").style.width = "0";
 }
