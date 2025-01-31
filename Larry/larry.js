@@ -4,11 +4,7 @@ let peak = false
 let edging = false
 let opacity = 0
 let evil = false;
-setInterval(function() {
-    document.getElementById("jorkingIt").style.left=numx+"%";
-    document.getElementById("jorkingIt").style.top=numy+"%";
-    document.getElementById("jorkingIt").style.opacity=opacity;
-},1)
+
 
 setInterval(function() {
     if (numx >= 100){
