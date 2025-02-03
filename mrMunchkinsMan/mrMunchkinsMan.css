@@ -1,6 +1,13 @@
 body {
-    background-color: seagreen;
+    background-color: lightblue;
+    background-image: url(mrMunchkinsMan.png);
+    overflow: hidden;
+    
 }
+
+
+
+
 .titleText {
     margin: auto;
     width: auto;
@@ -60,6 +67,34 @@ body {
 .navButton:hover {
     background-color: lightgray;
     cursor: pointer; /* Ensures the cursor shows the click icon */
+}
+
+#contentBox {
+    width: 300px;
+    border: 10px solid black;
+    padding: 40px;
+    margin: 20px;
+    background-color: white;
+    position: absolute; /* Add this line to make the box relative to its parent */
+    top: 100px; /* Adjust this value to position the box below the navigation bar */
+}
+
+#contentBox h1 {
+    position: absolute;
+    top: 0;
+    left: 10;
+    text-align: left;
+    font-size: 24px; /* Adjust this value to change the font size */
+    font-family: Arial, sans-serif; /* Change this value to change the font type */
+}
+
+#contentBox p {
+    position: absolute;
+    top: 30px;
+    left: 10;
+    text-align: left;
+    font-size: 16px; /* Adjust this value to change the font size */
+    font-family: Arial, sans-serif; /* Change this value to change the font type */
 }
 
 footer {

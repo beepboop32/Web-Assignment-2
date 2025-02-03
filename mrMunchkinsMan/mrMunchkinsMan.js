@@ -5,3 +5,6 @@ function openNav() {
 function closeNav() {
     document.getElementById("sideNav").style.width = "0";
 }
+window.onload = function() {
+    document.getElementById("MunchkinMan").style.backgroundImage = "mrMunchkinsMan/mrMunchkinsMan.png"
+}
