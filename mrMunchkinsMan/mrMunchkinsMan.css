@@ -70,28 +70,23 @@ body {
 }
 
 #contentBox {
-    width: 300px;
+    width: auto;
     border: 10px solid black;
-    padding: 40px;
+    padding: 20px;
     margin: 20px;
     background-color: white;
     position: absolute; /* Add this line to make the box relative to its parent */
     top: 100px; /* Adjust this value to position the box below the navigation bar */
+    box-sizing: border-box;
 }
 
 #contentBox h1 {
-    position: absolute;
-    top: 0;
-    left: 10;
     text-align: left;
     font-size: 24px; /* Adjust this value to change the font size */
     font-family: Arial, sans-serif; /* Change this value to change the font type */
 }
 
 #contentBox p {
-    position: absolute;
-    top: 30px;
-    left: 10;
     text-align: left;
     font-size: 16px; /* Adjust this value to change the font size */
     font-family: Arial, sans-serif; /* Change this value to change the font type */

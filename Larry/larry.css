@@ -4,6 +4,7 @@ body {
     overflow: hidden;
 }
 .titleText {
+    
     margin: auto;
     width: auto;
     background-color: white;
@@ -19,6 +20,7 @@ body {
     transition: opacity 1s;
     position: absolute;
     transform: translate(-50%,-50%);
+    z-index: -1;
 }
 
 

@@ -58,6 +58,12 @@ setInterval(function(){
     evil = !evil;
 },1000)
 
+setInterval(function(){
+    document.getElementById("jorkingIt").style.opacity = opacity
+    document.getElementById("jorkingIt").style.left = numx + "%"
+    document.getElementById("jorkingIt").style.top = numy + "%"
+},10)
+
 function openNav() {
     document.getElementById("sideNav").style.width = "250px";
 }

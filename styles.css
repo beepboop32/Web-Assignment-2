@@ -110,3 +110,29 @@ footer {
     bottom: 0%;
     left: 0%;
 }
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fader {
+    animation: fadein 1s;
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.fader2 {
+    animation: fadeout 1s;
+}

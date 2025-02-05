@@ -2,8 +2,15 @@ function createPikmin(id, src) {
     let pikmin = document.createElement("img");
     pikmin.src = src;
     pikmin.id = id;
-    pikmin.className = "pikmin";
+    pikmin.classList.add("fader");
+    pikmin.classList.add("pikmin");
     document.getElementById("theBOYS").appendChild(pikmin);
+    
+    // Remove fader class after animation ends
+    pikmin.addEventListener('animationend', () => {
+        pikmin.classList.remove("fader");
+    });
+
     return pikmin;
 }
 
@@ -15,7 +22,8 @@ for (let i = 0; i < 1; i++) {
         y: Math.floor(Math.random() * 100),
         numx: 0,
         numy: 0,
-        swap: false
+        swap: false,
+        lifespan: 5 // Set lifespan to 1 second
     });
 }
 
@@ -41,7 +49,23 @@ function closeNav() {
 
 
 window.onload = function() {
+    function cats(event, carName) {
+        let i, tabcontent, tabs;
     
+        tabcontent = document.getElementsByClassName("tablinks");
+        for (i=0; i<tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            
+        }
+        tabcontent = document.getElementsByClassName("tablinks");
+        for (i=0; i<tabcontent.length; i++) {
+            tabs[i].className = tablinks[i].className.replace(" active", "");
+        }
+    
+        document.getElementById(carName).style.display = "block";
+        event.currentTarget.className += " active";
+    
+    }
 
     setInterval(function() {
         pikmins.forEach(pikmin => {
@@ -78,9 +102,22 @@ const interval = setInterval(function() {
             numx: element.numx,
             numy: element.numy,
             swap: false,
+            lifespan: 5 // Ensure new pikmins also have a lifespan of 1 second
         });
     });
-    if (pikmins.length >= 100) {
+    if (pikmins.length >= 800) {
         clearInterval(interval);
+        
     }
 }, 1000);
+
+setInterval(function() {
+    pikmins.forEach(element => {
+        element.lifespan--;
+        if (element.lifespan <= 0) {
+            element.element.classList.remove("fader");
+            element.element.classList.add("fader2");
+            
+        }
+    });
+}, 1000); // Adjusted interval to 1000ms to match the 1-second lifespan
